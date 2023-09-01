@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/iconItemCardView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        apps:cardCornerRadius="30dp"
+        apps:cardElevation="0dp"
+        apps:layout_constraintBottom_toBottomOf="parent"
+        apps:layout_constraintStart_toStartOf="parent"
+        apps:layout_constraintTop_toTopOf="parent">
+        <!-- apps:cardCornerRadius="30dp" image뷰에서 안하고 cardview로 가능-->
+
+        <ImageView
+            android:id="@+id/iconItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample1" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_itemTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        apps:layout_constraintEnd_toEndOf="parent"
+        apps:layout_constraintStart_toEndOf="@+id/iconItemCardView"
+        apps:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="경기도 부천시 오정구"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        apps:layout_constraintEnd_toEndOf="parent"
+        apps:layout_constraintStart_toEndOf="@+id/iconItemCardView"
+        apps:layout_constraintTop_toBottomOf="@+id/tv_itemTitle"
+        />
+    <!--android:textColor="@color/txt_sub"-->
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:text="10,000원"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        apps:layout_constraintEnd_toEndOf="parent"
+        apps:layout_constraintStart_toEndOf="@+id/iconItemCardView"
+        apps:layout_constraintTop_toBottomOf="@+id/tv_address"
+        />
+
+<LinearLayout
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    apps:layout_constraintBottom_toBottomOf="parent"
+    apps:layout_constraintEnd_toEndOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_chat"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_chat"/>
+
+    <TextView
+        android:id="@+id/tv_chatCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="32"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/heart"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_likeCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grayLine"
+        apps:layout_constraintBottom_toBottomOf="parent"
+        apps:layout_constraintEnd_toEndOf="parent"
+        apps:layout_constraintStart_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
